@@ -98,20 +98,15 @@ function NavBar() {
 
       {menuOpen && (
         <div className={styles.menu_overlay}>
-          <ul className={styles.menu_list}>
-            <li><Link to="/sobre">Sobre</Link></li>
-            <li><Link to="/bibliotecas">Bibliotecas</Link></li>
-            <li><Link to="/junte-se">Junte-se</Link></li>
-            <li><Link to="/">Mekpool</Link></li>
-          </ul>
+          
 
           {/* Footer dentro do menu */}
           <footer className={styles.menu_footer}>
             <div className={styles.footer_left}>
-              <span>Sobre</span>
-              <span>Bibliotecas</span>
-              <span>Junte-se</span>
-              <span>Mekpool</span>
+              <Link to="/sobre" className={styles.menu_list}>Sobre</Link>
+              <Link to="/biblioteca" className={styles.menu_list} >Bibliotecas</Link>
+              <Link to="/juste-se" className={styles.menu_list}>Junte-se</Link>
+              <Link to="/mekpool" className={styles.menu_list}>Mekpool</Link>
             </div>
             <div className={styles.footer_right}>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
