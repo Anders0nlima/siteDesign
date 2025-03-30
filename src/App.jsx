@@ -1,6 +1,6 @@
 import './App.css'
 import ExUm from './pages/ExUm';
-import Footer from './pages/Footer';
+import Footer from './compontes/Footer';
 import MainPage from './pages/MainPage';
 import { BrowserRouter } from 'react-router-dom';
 

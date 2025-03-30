@@ -1,16 +1,17 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faYoutube, faLinkedinIn, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
+import styles from './Footer.module.css'
 
 function Footer(){
     return(
-        <footer className="main-footer">
-          <div className="footer-content">
-            <div className="footer-section">
+        <footer className={styles.main_footer}>
+          <div className={styles.footer_content}>
+            <div className={styles.footer_section}>
               <h3>Sobre Nós</h3>
               <p>Mekpool é uma plataforma dedicada a criadores de conteúdo multimídia.</p>
             </div>
-            <div className="footer-section">
+            <div className={styles.footer_section}>
               <h3>Links Rápidos</h3>
               <ul>
                 <li><Link to="/sobre">Sobre</Link></li>
@@ -18,9 +19,9 @@ function Footer(){
                 <li><Link to="/junte-se">Junte-se</Link></li>
               </ul>
             </div>
-            <div className="footer-section">
+            <div className={styles.footer_section}>
               <h3>Redes Sociais</h3>
-              <div className="social-icons">
+              <div className={styles.social_icons}>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
@@ -39,7 +40,7 @@ function Footer(){
               </div>
             </div>
           </div>
-          <div className="footer-bottom">
+          <div className={styles.footer_bottom}>
             <p>&copy; {new Date().getFullYear()} Mekpool. Todos os direitos reservados.</p>
           </div>
         </footer>
